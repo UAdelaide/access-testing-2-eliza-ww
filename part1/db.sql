@@ -29,7 +29,7 @@ CREATE TABLE message (
     PRIMARY KEY (message_id)
 );
 
-INSERT INTO message (messenger_id, recipient_id, contents) VALUES (1, 2, "do you want to buy some books, kid?")
+INSERT INTO message (messenger_id, recipient_id, contents) VALUES (1, 2, "do you want to buy some books, kid?");
 
 CREATE TABLE book (
     isbn int,
@@ -37,6 +37,8 @@ CREATE TABLE book (
     author varchar(255),
     PRIMARY KEY (isbn)
 );
+
+INSERT INTO message ()
 
 CREATE TABLE history (
     user_id int,

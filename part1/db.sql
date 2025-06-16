@@ -2,7 +2,9 @@ CREATE TABLE user (
     user_id int NOT NULL AUTO_INCREMENT,
     username varchar(255),
     pass varchar(255),
-    PRIMARY KEY (user_id)
+    address_id int,
+    PRIMARY KEY (user_id),
+    FOREIGN KEY address_id
 );
 
 CREATE TABLE listing (

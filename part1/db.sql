@@ -48,4 +48,4 @@ CREATE TABLE address (
     PRIMARY KEY (address_id)
 );
 
-INSERT INTO address ()
+INSERT INTO address (house_number, street, city, postcode) VALUES ()

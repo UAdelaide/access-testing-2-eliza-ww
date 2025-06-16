@@ -29,6 +29,8 @@ CREATE TABLE message (
     PRIMARY KEY (message_id)
 );
 
+INSERT INTO message ()
+
 CREATE TABLE book (
     isbn int,
     title varchar(255),

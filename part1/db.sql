@@ -17,5 +17,7 @@ CREATE TABLE message (
     id int NOT NULL AUTO_INCREMENT,
     messenger_id int,
     recipient_id int,
+    message varchar(255),
+    date,
     PRIMARY KEY (id)
 );

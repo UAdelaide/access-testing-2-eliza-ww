@@ -16,6 +16,8 @@ CREATE TABLE listing (
     PRIMARY KEY (listing_id)
 );
 
+INSERT INTO listing (user_id, book_isbn, price) VALUES (1, 1, 500);
+
 CREATE TABLE message (
     message_id int NOT NULL AUTO_INCREMENT,
     messenger_id int,

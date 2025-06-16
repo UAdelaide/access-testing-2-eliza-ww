@@ -38,7 +38,5 @@ CREATE TABLE history (
 
 CREATE TABLE address (
     address_id int,
-    listing_id int,
-    timestamp DATETIME,
     FOREIGN KEY (user_id)
 );

@@ -4,7 +4,7 @@ CREATE TABLE user (
     pass varchar(255),
     address_id int,
     PRIMARY KEY (user_id),
-    FOREIGN KEY address_id
+    FOREIGN KEY address_id REFERENCES address(address_id)
 );
 
 CREATE TABLE listing (

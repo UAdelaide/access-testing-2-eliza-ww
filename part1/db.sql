@@ -31,7 +31,7 @@ CREATE TABLE book (
 
 CREATE TABLE history (
     user_id int,
-    title varchar(255),
-    author varchar(255),
+    listing_id int,
+    timestamp DATETIME,
     PRIMARY KEY (isbn)
 );

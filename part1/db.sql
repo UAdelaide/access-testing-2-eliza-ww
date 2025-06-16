@@ -29,7 +29,7 @@ CREATE TABLE message (
     PRIMARY KEY (message_id)
 );
 
-INSERT INTO message ()
+INSERT INTO message (messenger_id, recipient_id, contents) VALUES (1, 2, "do you want to buy some books, kid?")
 
 CREATE TABLE book (
     isbn int,

@@ -38,5 +38,8 @@ CREATE TABLE history (
 
 CREATE TABLE address (
     address_id int,
+    house_number varchar(255),
+    street varchar(255),
+    city varchar(255),
     FOREIGN KEY (user_id)
 );

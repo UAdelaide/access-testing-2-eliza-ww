@@ -15,7 +15,7 @@ CREATE TABLE listing (
 
 CREATE TABLE message (
     id int NOT NULL AUTO_INCREMENT,
-    mess varchar(255),
-    pass varchar(255),
+    messenger_id int,
+    recipient_id int,
     PRIMARY KEY (id)
 );

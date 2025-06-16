@@ -3,8 +3,7 @@ CREATE TABLE user (
     username varchar(255),
     pass varchar(255),
     address_id int,
-    PRIMARY KEY (user_id),
-    FOREIGN KEY address_id REFERENCES address(address_id)
+    PRIMARY KEY (user_id)
 );
 
 CREATE TABLE listing (

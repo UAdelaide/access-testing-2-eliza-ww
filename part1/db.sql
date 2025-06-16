@@ -7,6 +7,8 @@ CREATE TABLE user (
 );
 
 INSERT INTO user (username, pass, address_id) VALUES ("abigail1", "password", 1);
+INSERT INTO user (username, pass, address_id) VALUES ("bobbyhill", "somethingaintright", 2);
+
 
 CREATE TABLE listing (
     listing_id int NOT NULL AUTO_INCREMENT,

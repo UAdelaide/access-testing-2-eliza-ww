@@ -47,3 +47,5 @@ CREATE TABLE address (
     postcode int,
     PRIMARY KEY (address_id)
 );
+
+INSERT INTO address 

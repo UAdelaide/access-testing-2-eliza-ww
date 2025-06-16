@@ -40,7 +40,7 @@ CREATE TABLE history (
 );
 
 CREATE TABLE address (
-    address_id int,
+    address_id int NOT NULL AUTO_INCREMENT,
     house_number varchar(255),
     street varchar(255),
     city varchar(255),
@@ -48,4 +48,4 @@ CREATE TABLE address (
     PRIMARY KEY (address_id)
 );
 
-INSERT INTO address 
+INSERT INTO address ()

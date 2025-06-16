@@ -41,5 +41,6 @@ CREATE TABLE address (
     house_number varchar(255),
     street varchar(255),
     city varchar(255),
-    FOREIGN KEY (user_id)
+    postcode int,
+    PRIMARY KEY (address_id)
 );

@@ -38,7 +38,7 @@ CREATE TABLE book (
     PRIMARY KEY (isbn)
 );
 
-INSERT INTO message ()
+INSERT INTO message book (isbn, title, author) VALUES (1234, "the iliad")
 
 CREATE TABLE history (
     user_id int,

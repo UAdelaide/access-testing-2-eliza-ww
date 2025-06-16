@@ -38,7 +38,7 @@ CREATE TABLE book (
     PRIMARY KEY (isbn)
 );
 
-INSERT INTO message book (isbn, title, author) VALUES (1234, "the iliad", "emily wilson");
+INSERT INTO book (isbn, title, author) VALUES (1234, "the iliad", "emily wilson");
 
 CREATE TABLE history (
     user_id int,
@@ -46,6 +46,8 @@ CREATE TABLE history (
     timestamp DATETIME,
     FOREIGN KEY (user_id) REFERENCES user(user_id)
 );
+
+INSERT INTO 
 
 CREATE TABLE address (
     address_id int NOT NULL AUTO_INCREMENT,

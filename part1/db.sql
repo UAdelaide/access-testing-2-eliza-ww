@@ -21,3 +21,12 @@ CREATE TABLE message (
     timestamp DATETIME,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE book (
+    isbn int,
+    messenger_id int,
+    recipient_id int,
+    contents varchar(255),
+    timestamp DATETIME,
+    PRIMARY KEY (isbn)
+);

@@ -7,7 +7,7 @@ CREATE TABLE user (
 
 CREATE TABLE listing (
     id int NOT NULL AUTO_INCREMENT,
-    username varchar(255),
+    user id int,
     pass varchar(255),
     PRIMARY KEY (id)
 );

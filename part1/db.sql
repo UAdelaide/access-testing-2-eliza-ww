@@ -7,7 +7,15 @@ CREATE TABLE user (
 
 CREATE TABLE listing (
     id int NOT NULL AUTO_INCREMENT,
-    user id int,
+    user_id int,
+    book_isbn int,
+    price int,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE message (
+    id int NOT NULL AUTO_INCREMENT,
+    mess varchar(255),
     pass varchar(255),
     PRIMARY KEY (id)
 );

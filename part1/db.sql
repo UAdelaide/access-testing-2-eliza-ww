@@ -1,25 +1,25 @@
 CREATE TABLE user (
-    id int NOT NULL AUTO_INCREMENT,
+    user_id int NOT NULL AUTO_INCREMENT,
     username varchar(255),
     pass varchar(255),
-    PRIMARY KEY (id)
+    PRIMARY KEY (user_id)
 );
 
 CREATE TABLE listing (
-    id int NOT NULL AUTO_INCREMENT,
+    listing_id int NOT NULL AUTO_INCREMENT,
     user_id int,
     book_isbn int,
     price int,
-    PRIMARY KEY (id)
+    PRIMARY KEY (listing_id)
 );
 
 CREATE TABLE message (
-    id int NOT NULL AUTO_INCREMENT,
+    message_id int NOT NULL AUTO_INCREMENT,
     messenger_id int,
     recipient_id int,
     contents varchar(255),
     timestamp DATETIME,
-    PRIMARY KEY (id)
+    PRIMARY KEY (message_id)
 );
 
 CREATE TABLE book (

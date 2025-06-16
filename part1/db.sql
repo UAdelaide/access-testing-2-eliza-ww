@@ -1,4 +1,5 @@
-
+-- 
+-- need to figure out how to do foreign keys on this thang
 
 CREATE TABLE user (
     user_id int NOT NULL AUTO_INCREMENT,

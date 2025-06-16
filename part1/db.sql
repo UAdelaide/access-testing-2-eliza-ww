@@ -4,3 +4,10 @@ CREATE TABLE user (
     pass varchar(255),
     PRIMARY KEY (id)
 );
+
+CREATE TABLE listing (
+    id int NOT NULL AUTO_INCREMENT,
+    username varchar(255),
+    pass varchar(255),
+    PRIMARY KEY (id)
+);

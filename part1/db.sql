@@ -33,5 +33,11 @@ CREATE TABLE history (
     user_id int,
     listing_id int,
     timestamp DATETIME,
-    PRIMARY KEY (isbn)
+    FOREIGN KEY (user_id)
+);
+]CREATE TABLE history (
+    user_id int,
+    listing_id int,
+    timestamp DATETIME,
+    FOREIGN KEY (user_id)
 );

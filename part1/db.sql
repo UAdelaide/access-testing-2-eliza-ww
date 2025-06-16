@@ -33,7 +33,7 @@ CREATE TABLE history (
     user_id int,
     listing_id int,
     timestamp DATETIME,
-    FOREIGN KEY (user_id)
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
 );
 
 CREATE TABLE address (

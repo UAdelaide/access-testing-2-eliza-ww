@@ -24,9 +24,7 @@ CREATE TABLE message (
 
 CREATE TABLE book (
     isbn int,
-    messenger_id int,
-    recipient_id int,
-    contents varchar(255),
-    timestamp DATETIME,
+    title varchar(255),
+    author varchar(255),
     PRIMARY KEY (isbn)
 );

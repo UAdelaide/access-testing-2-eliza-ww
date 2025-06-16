@@ -28,3 +28,10 @@ CREATE TABLE book (
     author varchar(255),
     PRIMARY KEY (isbn)
 );
+
+CREATE TABLE history (
+    user_id int,
+    title varchar(255),
+    author varchar(255),
+    PRIMARY KEY (isbn)
+);

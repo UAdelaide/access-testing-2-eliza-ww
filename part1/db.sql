@@ -6,6 +6,8 @@ CREATE TABLE user (
     PRIMARY KEY (user_id)
 );
 
+INSERT INTO user (username, pass, address_id) VALUES ("abigail1", "password", 1);
+
 CREATE TABLE listing (
     listing_id int NOT NULL AUTO_INCREMENT,
     user_id int,

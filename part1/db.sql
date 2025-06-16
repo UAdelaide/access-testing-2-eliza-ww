@@ -18,6 +18,6 @@ CREATE TABLE message (
     messenger_id int,
     recipient_id int,
     contents varchar(255),
-    timestamp date,
+    timedate DATETIME,
     PRIMARY KEY (id)
 );

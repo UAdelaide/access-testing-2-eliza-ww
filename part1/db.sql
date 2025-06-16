@@ -9,7 +9,6 @@ CREATE TABLE user (
 INSERT INTO user (username, pass, address_id) VALUES ("abigail1", "password", 1);
 INSERT INTO user (username, pass, address_id) VALUES ("bobbyhill", "somethingaintright", 2);
 
-
 CREATE TABLE listing (
     listing_id int NOT NULL AUTO_INCREMENT,
     user_id int,
@@ -47,7 +46,7 @@ CREATE TABLE history (
     FOREIGN KEY (user_id) REFERENCES user(user_id)
 );
 
-INSERT INTO history (user_id, listing_id) VALUES (1, 1)
+INSERT INTO history (user_id, listing_id) VALUES (1, 1);
 
 CREATE TABLE address (
     address_id int NOT NULL AUTO_INCREMENT,

@@ -15,9 +15,6 @@ SELECT * FROM history
 INNER JOIN listing on history.listing_id = listing.listing_id
 INNER JOIN book ON listing.book_isbn = book.isbn;
 
-SELECT * FROM listing
-INNER JOIN book ON listing.book_isbn = book.isbn;
-
 SELECT * FROM history
 WHERE user_id = 1
 INNER JOIN listing ON history.listing_id = listing.listing_id

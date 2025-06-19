@@ -4,8 +4,8 @@ INNER JOIN listing ON listing.listing_id = history.listing_id
 INNER JOIN book ON book_isbn = listing.isbn; 
 
 -- obtain title, author, and timestamp
--- of books sold by a given user
--- 
+-- of books bought by a given user
+-- ordered from most to least recent
 
 SELECT * FROM history
 WHERE user_id = 1

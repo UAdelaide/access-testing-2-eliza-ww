@@ -12,7 +12,7 @@ INNER JOIN listing ON history.listing_id = listing.listing_id
 INNER JOIN book ON listing.book_isbn = book.isbn
 ORDER BY history.timestamp DESC;
 
--- select titles, authors, 
+-- select titles, authors, and the number of sold books for 
 
 SELECT title, author FROM history
 ORDER BY (

@@ -1,8 +1,3 @@
-SELECT title, author, timestamp FROM history
-WHERE user_id = {id here}
-INNER JOIN listing ON listing.listing_id = history.listing_id
-INNER JOIN book ON book_isbn = listing.isbn; 
-
 -- obtain title, author, and timestamp
     -- title and author obtained in book
     -- isbn obtained in listing

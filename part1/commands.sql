@@ -12,7 +12,7 @@ INNER JOIN book ON book_isbn = listing.isbn; 
 -- ordered from most to least recent
 
 SELECT * FROM book
-INNER JOIN listing on listing.listing_id = history.listing_id;
+INNER JOIN listing on .listing_id = history.listing_id;
 
 SELECT * FROM history
 WHERE user_id = 1

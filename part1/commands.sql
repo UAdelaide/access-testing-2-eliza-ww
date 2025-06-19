@@ -15,7 +15,7 @@ SELECT book.title, book.author, history.timestamp FROM history
 WHERE user_id = 1
 INNER JOIN listing ON history.listing_id = listing.listing_id
 INNER JOIN book ON listing.book_isbn = book.isbn
-ORDER BY history.timestamp ASC;
+ORDER BY history.timestamp DESC;
 
 SELECT * FROM history
 WHERE user_id = 1

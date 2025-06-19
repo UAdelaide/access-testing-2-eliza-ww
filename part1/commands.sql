@@ -11,8 +11,8 @@ INNER JOIN book ON book_isbn = listing.isbn; 
 -- of books bought by a given user
 -- ordered from most to least recent
 
-SELECT * FROM book
-INNER JOIN listing on .listing_id = history.listing_id;
+SELECT * FROM history
+INNER JOIN listing on history.listing_id = listing.listing_id;
 
 SELECT * FROM history
 WHERE user_id = 1

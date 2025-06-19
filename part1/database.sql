@@ -71,7 +71,7 @@ CREATE TABLE `book` (
 
 LOCK TABLES `book` WRITE;
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
-INSERT INTO `book` VALUES (1234,'the iliad','emily wilson');
+INSERT INTO `book` VALUES (1111,'odyssey','emily wilson'),(1131,'into the wild','erin hunter'),(1132,'fire and ice','erin hunter'),(1133,'the final battle','erin hunter'),(1134,'a new prophecy','erin hunter'),(1136,'fading echoes','erin hunter'),(1234,'the iliad','emily wilson'),(2000,'the sight','erin hunter'),(2001,'dark river','erin hunter'),(2002,'outcast','erin hunter'),(2003,'eclipse','erin hunter'),(2004,'long shadows','erin hunter'),(2005,'sunrise','erin hunter'),(2006,'midnight','erin hunter');
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,7 +97,7 @@ CREATE TABLE `history` (
 
 LOCK TABLES `history` WRITE;
 /*!40000 ALTER TABLE `history` DISABLE KEYS */;
-INSERT INTO `history` VALUES (1,1,NULL);
+INSERT INTO `history` VALUES (1,2,'2025-06-19 04:11:52'),(1,5,'2025-06-19 04:12:18'),(1,10,'2025-06-19 04:13:14'),(1,11,'2025-06-19 04:13:20'),(2,3,'2025-06-19 04:13:44'),(2,4,'2025-06-19 04:13:47'),(2,14,'2025-06-19 04:13:54');
 /*!40000 ALTER TABLE `history` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -114,7 +114,7 @@ CREATE TABLE `listing` (
   `book_isbn` int DEFAULT NULL,
   `price` int DEFAULT NULL,
   PRIMARY KEY (`listing_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -123,7 +123,7 @@ CREATE TABLE `listing` (
 
 LOCK TABLES `listing` WRITE;
 /*!40000 ALTER TABLE `listing` DISABLE KEYS */;
-INSERT INTO `listing` VALUES (1,1,1,500);
+INSERT INTO `listing` VALUES (1,1,1,500),(2,2,1233,400),(3,2,1453,20),(4,2,1104,30),(5,2,1583,21),(6,2,1644,250),(7,2,1983,70),(8,2,1053,70),(9,2,1213,44),(10,1,1243,50),(11,1,1533,13),(12,1,16434,24),(13,1,13483,30),(14,1,1043,30),(15,1,1673,44),(16,1,1343,10);
 /*!40000 ALTER TABLE `listing` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -189,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-16 15:26:21
+-- Dump completed on 2025-06-19  4:34:16

@@ -1,4 +1,4 @@
--- put all of this code into the terminal and then use mysqldump 
+-- put all of this code into the terminal and then use mysqldump
 -- need to figure out how to do foreign keys on this thang
 
 CREATE TABLE user (

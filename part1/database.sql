@@ -85,7 +85,7 @@ DROP TABLE IF EXISTS `history`;
 CREATE TABLE `history` (
   `user_id` int DEFAULT NULL,
   `listing_id` int DEFAULT NULL,
-  `timestamp` datetime DEFAULT NULL,
+  `timestamp` datetime DEFAULT CURRENT_TIMESTAMP,
   KEY `user_id` (`user_id`),
   CONSTRAINT `history_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
